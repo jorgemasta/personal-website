@@ -32,6 +32,10 @@ export const homePageQuery = graphql`
         profile_image
         name
         position
+        social {
+          social_network
+          social_url
+        }
       }
     }
   }
