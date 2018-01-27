@@ -4,6 +4,9 @@ path: /
 profile_image: /img/jorgemarrero.jpg
 name: Jorge Marrero
 position: Web Developer
+social:
+  - social-network: linkedin
+    social-url: 'https://www.linkedin.com/in/jorgemarrerosantana/'
 ---
 ### BODY TEXT PERS
 
