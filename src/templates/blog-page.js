@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
 
-export default class IndexPage extends React.Component {
+export default class BlogPage extends React.Component {
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -20,13 +20,10 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
+    console.log(this.props, data);
 
     return (
       <section className="section">
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={() => this.handleScriptLoad()}
-        />
         <div className="container">
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
@@ -63,7 +60,7 @@ export default class IndexPage extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
