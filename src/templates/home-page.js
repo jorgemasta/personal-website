@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
 
-export default class IndexPage extends React.Component {
+export default class HomePageTemplate extends React.Component {
   render() {
     const { frontmatter, html } = this.props.data.markdownRemark;
     console.log(frontmatter);
