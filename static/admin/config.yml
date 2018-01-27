@@ -27,7 +27,7 @@ collections:
               fields: [
                 {
                   label: "Social Network",
-                  name: social-network,
+                  name: social_network,
                   widget: select,
                   options: [ 
                     { label: "Twitter", value: "twitter" },
@@ -45,7 +45,7 @@ collections:
                 },
                 {
                   label: URL,
-                  name: social-url,
+                  name: social_url,
                   widget: string
                 }
               ]
