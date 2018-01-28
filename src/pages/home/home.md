@@ -7,6 +7,8 @@ position: Web Developer
 social:
   - social_network: linkedin
     social_url: 'https://www.linkedin.com/in/jorgemarrerosantana/'
+  - social_network: github
+    social_url: 'https://github.com/jorgemarrero'
 ---
 ### BODY TEXT PERS
 
