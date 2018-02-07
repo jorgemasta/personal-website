@@ -3,7 +3,7 @@ templateKey: home-page
 path: /
 profile_image: /img/jorgemarrero.jpg
 name: Jorge Marrero
-position: Web Developer
+position: Web Developer React
 social:
   - social_network: linkedin
     social_url: 'https://www.linkedin.com/in/jorgemarrerosantana/'
