@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
-import { Icon } from 'semantic-ui-react'
+import { Icon, Divider } from 'semantic-ui-react'
 import { HTMLContent } from '../components/Content';
 
 export default class HomePageTemplate extends React.Component {
@@ -22,13 +22,15 @@ export default class HomePageTemplate extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">{name}</h1>
-            <h2>{position}</h2>
-            <img style={{ borderRadius: "5px" }} src={image} alt="ALT" />
-            <HTMLContent className="description" content={html} />
+
+            <img className="profile-image" src={image} alt="ALT" />
+            <h1 className="has-text-weight-bold is-size-3">{name}</h1>
+            <h2 className="is-size-6 position">{position}</h2>
             <div className="social">
               {this.renderSocial(social)}
             </div>
+            <Divider />
+            <HTMLContent className="description" content={html} />
           </div>
         </div>
       </section>

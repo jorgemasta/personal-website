@@ -5,7 +5,7 @@ import Script from "react-load-script";
 import 'semantic-ui-css/semantic.min.css';
 
 import Navbar from "../components/Navbar";
-import "./all.sass";
+import "../assets/scss/all.scss";
 
 class TemplateWrapper extends React.Component {
   handleScriptLoad() {
@@ -25,7 +25,7 @@ class TemplateWrapper extends React.Component {
     return (
       <div>
         <Helmet title="Home | Gatsby + Netlify CMS" />
-        <Navbar />
+        {/* <Navbar /> */}
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}

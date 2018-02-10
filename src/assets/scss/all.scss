@@ -1,0 +1,50 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "fonts";
+
+// Config
+$kaldi-red: #FD461E;
+$kaldi-red-invert: #fff;
+
+$primary: $kaldi-red;
+$primary-invert: $kaldi-red-invert;
+
+// Helper Classes
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+
+body {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@import "~bulma";
+@import "home";
