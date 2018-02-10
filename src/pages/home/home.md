@@ -9,6 +9,13 @@ social:
     social_url: 'https://www.linkedin.com/in/jorgemarrerosantana/'
   - social_network: github
     social_url: 'https://github.com/jorgemarrero'
+skills:
+  - skill_name: React
+    skill_value: 9
+  - skill_name: AngularJS
+    skill_value: 6
+  - skill_name: Scrum
+    skill_value: 8
 ---
 
 ### About Me
