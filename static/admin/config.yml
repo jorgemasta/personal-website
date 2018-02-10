@@ -50,6 +50,27 @@ collections:
                 }
               ]
             }
+          - {
+              label: Skills,
+              name: "skills",
+              widget: "list",
+              fields: [
+                {
+                  label: "Skill name",
+                  name: skill_name,
+                  widget: string
+                },
+                {
+                  label: "Skill value",
+                  name: skill_value,
+                  widget: number,
+                  default: 5,
+                  valueType: "int",
+                  min: 1,
+                  max: 10
+                }
+              ]
+            }
       - file: "src/pages/about/about.md"
         label: "About (Testing)"
         name: "about"

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
-import { Icon, Divider } from 'semantic-ui-react'
+import { Icon, Divider, Progress } from 'semantic-ui-react'
 import { HTMLContent } from '../components/Content';
 
 export default class HomePageTemplate extends React.Component {
@@ -14,9 +14,19 @@ export default class HomePageTemplate extends React.Component {
     );
   }
 
+  renderSkills(skills) {
+    console.log(skills);
+    return skills.map(({skill_name, skill_value}) => (
+      <div className="skills">
+        {skill_name}
+        <Progress percent={skill_value*10}/>
+      </div>
+    ));
+  }
+
   render() {
     const { frontmatter, html } = this.props.data.markdownRemark;
-    const { name, profile_image: image, position, social } = frontmatter;
+    const { name, profile_image: image, position, social, skills } = frontmatter;
 
     return (
       <section className="section">
@@ -31,6 +41,8 @@ export default class HomePageTemplate extends React.Component {
             </div>
             <Divider />
             <HTMLContent className="description" content={html} />
+            {skills && <h3>Skills</h3>}
+            {skills && this.renderSkills(skills)}
           </div>
         </div>
       </section>
@@ -47,6 +59,10 @@ export const homePageQuery = graphql`
         profile_image
         name
         position
+        skills {
+          skill_name
+          skill_value
+        }
         social {
           social_network
           social_url
