@@ -32,12 +32,15 @@ export default class HomePageTemplate extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-
-            <img className="profile-image" src={image} alt="ALT" />
-            <h1 className="has-text-weight-bold is-size-3">{name}</h1>
-            <h2 className="is-size-6 position">{position}</h2>
-            <div className="social">
-              {this.renderSocial(social)}
+            <div className="personal">
+              <img className="profile-image" src={image} alt="ALT" />
+              <div className="personal-content">
+                <h1 className="has-text-weight-bold">{name}</h1>
+                <h2 className="position">{position}</h2>
+                <div className="social">
+                  {this.renderSocial(social)}
+                </div>
+              </div>
             </div>
             <Divider />
             <HTMLContent className="description" content={html} />

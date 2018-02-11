@@ -1,11 +1,36 @@
 .content {
   background-color: white;
-  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
   padding: 22px;
   border-radius: 8px;
   margin-top: 70px;
-  display: flex;
-  flex-direction: column;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $desktop) {
+    padding: 48px;
+    margin-top: initial;
+  }
+  
+  .personal {
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: $desktop) {
+      flex-direction: initial;
+    }
+  }
+
+  .personal-content {
+    width: 100%;
+    @media (min-width: $desktop) {
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 24px;
+    }
+  }
 
   .profile-image {
     border-radius: 100%;
@@ -14,21 +39,46 @@
     object-fit: cover;
     margin-top: -100px;
     align-self: center;
-    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+    @media (min-width: $desktop) {
+      border-radius: initial;
+      height: 280px;
+      width: initial;
+      margin-top: initial;
+      // margin-bottom: -100px;
+      // border-radius: 8px;
+    }
   }
 
-  h1, h2 {
+  .divider {
+    @media (min-width: $desktop) {
+      padding-bottom: 40px;
+      margin-top: -24px;
+    }
+  }
+
+  h1,
+  h2 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: "Montserrat", sans-serif;
   }
 
-  h1, h1:not(:first-child) {
+  h1,
+  h1:not(:first-child) {
     margin-top: 0.5em;
     margin-bottom: 0;
+    font-size: 32px;
+    @media (min-width: $desktop) {
+      font-size: 52px;
+    }
   }
 
   h2.position {
     padding-bottom: 0.5em;
+    font-size: 16px;
+    @media (min-width: $desktop) {
+      font-size: 22px;
+    }
   }
 
   .social {

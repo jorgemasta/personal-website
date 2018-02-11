@@ -8,6 +8,9 @@ $kaldi-red-invert: #fff;
 $primary: $kaldi-red;
 $primary-invert: $kaldi-red-invert;
 
+$desktop: 1024px;
+$tablet: 768px;
+
 // Helper Classes
 .full-width-image-container {
   width: 100vw;
@@ -32,6 +35,11 @@ body {
   background-size: 400% 400%;
   animation: Gradient 10s ease infinite;
   font-family: 'Montserrat', sans-serif;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @keyframes Gradient {
