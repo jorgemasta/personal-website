@@ -24,7 +24,11 @@ class TemplateWrapper extends React.Component {
     const { children } = this.props;
     return (
       <div>
-        <Helmet title="Developer | Jorge Marrero" />
+        <Helmet>
+          <title>"Developer | Jorge Marrero"</title>
+          <meta name="description" content="Website of the Developer Jorge Marrero. Currently living in Gran Canaria, Spain." />
+          <link rel="icon" type="image/png" href="../img/favicon.png" />
+        </Helmet>
         {/* <Navbar /> */}
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
