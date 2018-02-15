@@ -25,9 +25,9 @@ class TemplateWrapper extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>"Developer | Jorge Marrero"</title>
+          <title>Developer | Jorge Marrero</title>
           <meta name="description" content="Website of the Developer Jorge Marrero. Currently living in Gran Canaria, Spain." />
-          <link rel="icon" type="image/png" href="../img/favicon.png" />
+          <link rel="icon" type="image/png" href="../img/developer-favicon.png" />
         </Helmet>
         {/* <Navbar /> */}
         <Script
