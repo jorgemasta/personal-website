@@ -12,10 +12,10 @@ social:
 skills:
   - skill_name: React
     skill_value: 9
-  - skill_name: AngularJS
-    skill_value: 6
-  - skill_name: Scrum
+  - skill_name: Serverless
     skill_value: 8
+  - skill_name: GraphQL
+    skill_value: 9
 ---
 
 ### About Me
