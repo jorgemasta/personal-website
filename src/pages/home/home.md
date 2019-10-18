@@ -6,9 +6,12 @@ name: Jorge Marrero
 position: Web Developer
 social:
   - social_network: linkedin
-    social_url: 'https://www.linkedin.com/in/jorgemarrerosantana/'
+    social_url: 'https://www.linkedin.com/in/jorgemasta/'
   - social_network: github
-    social_url: 'https://github.com/jorgemarrero'
+    social_url: 'https://github.com/jorgemasta'
+  - social_network: twitter
+    social_url: 'https://twitter.com/jorgemasta'
+    
 skills:
   - skill_name: React
     skill_value: 9
